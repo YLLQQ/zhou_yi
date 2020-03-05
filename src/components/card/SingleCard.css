@@ -1,35 +1,74 @@
 @import '~antd/dist/antd.css';
-
-.gGua{
+.container {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header {
+    margin: 20px;
+    height: 40px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.row {
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+}
+
+.gYang {
+    margin: 10px auto;
+    width: 300px;
+    height: 30px;
+    background-color: black;
+}
+
+.gWhite {
+    margin: 10px auto;
+    width: 300px;
+    height: 30px;
+}
+
+
+.gYin {
+    display: flex;
+    margin: 10px auto;
+    width: 300px;
+    height: 30px;
+    justify-content: center;
+}
+
+.gLeft {
+    width: 180px;
+    background-color: black;
+}
+
+.gMiddle {
+    width: 40px;
+}
+
+.gRight {
+    width: 180px;
+    background-color: black;
+}
+
+.yi {
+    margin: 10px auto;
     width: 400px;
-    justify-content: center;
-}
-
-.gYang{
-    width: 300px;
     height: 30px;
-    background-color: black;
+    line-height: 30px;
 }
 
-.gYin{
-    display: flex;
-    width: 300px;
+.xiang {
+    margin: 10px auto;
+    width: 400px;
     height: 30px;
-    justify-content: center;
-}
-
-.gLeft{
-    width:130px;
-    background-color: black;
-}
-
-.gMiddle{
-    width:40px;
-}
-
-.gRight{
-    width:130px;
-    background-color: black;
+    line-height: 30px;
 }

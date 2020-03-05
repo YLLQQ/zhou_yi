@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SingleCard from './components/card/SingleCard';
+import FullGua from './pages/gua/FullGua';
 
-ReactDOM.render(<SingleCard />, document.getElementById('root'));
+ReactDOM.render(<FullGua />, document.getElementById('root'));
