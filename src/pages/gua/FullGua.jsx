@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import SingleCard from "../../components/card/SingleCard";
 import axios from 'axios';
+import { Carousel } from 'antd';
+import './FullGua.css';
 
 const getRemoteDataList = (func) => {
     axios.get('https://www.fastmock.site/mock/152dc15209e2480ae6d8e3f7e23e0059/zhouyi/all')
@@ -16,7 +18,9 @@ const FullGua = () => {
 
     return (
         <div>
-            {dataList.map(v => <SingleCard dataSource={v} key={Math.random() * 10000} />)}
+            <Carousel autoplay>
+                {dataList.map(v => <SingleCard dataSource={v} key={Math.random() * 10000} />)}
+            </Carousel>
         </div>
     );
 }
