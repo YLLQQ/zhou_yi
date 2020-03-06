@@ -4,6 +4,7 @@ import './SingleCard.css'
 const SingleCard = (props) => {
 
     const dataSource = props.dataSource;
+
     const title = dataSource.title;
     const content = dataSource.content;
     const yao = dataSource.yao;
@@ -13,14 +14,17 @@ const SingleCard = (props) => {
             <div className="header">
                 {title}
             </div>
-            <div className="yao">
-                {content}
+
+            <div>
+                {
+                    content && content.map((item, index) => <div key={index} className="yao">{item}</div>)
+                }
             </div>
 
             <div className="content">
                 {
-                    yao.map(v =>
-                        <div className="row">
+                    yao.map((v, i) =>
+                        <div className="row" key={i}>
                             {
                                 v.flag === 1 ?
                                     <div className="gYang" /> :
