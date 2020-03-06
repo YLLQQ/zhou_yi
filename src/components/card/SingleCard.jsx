@@ -26,16 +26,16 @@ const SingleCard = (props) => {
                     yao.map((v, i) =>
                         <div className="row" key={i}>
                             {
-                                v.flag === 1 ?
-                                    <div className="gYang" /> :
-                                    v.flag === 0 ?
-                                        <div className="gYin" >
+                                v.yi.substr(0, 2).indexOf('用') > -1 ?
+                                    <div className="gWhite" /> :
+                                    v.yi.substr(0, 2).indexOf('九') > -1 ?
+                                        <div className="gYang" /> :
+                                        < div className="gYin" >
                                             <div className="gLeft" />
                                             <div className="gMiddle" />
                                             <div className="gRight" />
                                         </div>
-                                        :
-                                        <div className="gWhite" />}
+                            }
                             <div className="yi" >
                                 {v.yi}
                             </div>
@@ -47,7 +47,7 @@ const SingleCard = (props) => {
                 }
             </div>
 
-        </div>
+        </div >
     );
 }
 
